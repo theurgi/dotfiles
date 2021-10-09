@@ -1,25 +1,27 @@
-# starship prompt
 eval "$(starship init zsh)"
-
-# zinit
-# https://zdharma.github.io/zinit/wiki/Example-Minimal-Setup/
-source $HOME/.config/zsh/.zinit/bin/zinit.zsh
-
-zinit wait lucid light-mode for \
-  atinit"zicompinit; zicdreplay" \
-  zdharma/fast-syntax-highlighting \
-  atload"_zsh_autosuggest_start" \
-  zsh-users/zsh-autosuggestions \
-  blockf atpull'zinit creinstall -q .' \
-  zsh-users/zsh-completions \
-  @asdf-vm/asdf \
-  @rupa/z
-
-# case-insensitive completions
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+eval "$(zoxide init zsh --cmd cd)"
+source $HOME/.asdf/asdf.sh
 
 # don't highlight pasted input
 zle_highlight+=(paste:none)
 
-# aliases and functions
-source $HOME/.config/zsh/.aliases
+# zsh_load_file, zsh_load_plugin, zsh_load_completion
+source $ZDOTDIR/.zsh_loaders
+
+# ----------------- files -----------------
+
+zsh_load_file ".aliases"
+
+# ---------------- plugins ----------------
+
+zsh_load_plugin "zdharma/fast-syntax-highlighting"
+zsh_load_plugin "zsh-users/zsh-autosuggestions"
+
+# —————————————— completions ——————————————
+
+autoload -Uz compinit && compinit
+
+fpath=(${ASDF_DIR}/completions $fpath) # asdf
+
+# case-insensitive completions
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
