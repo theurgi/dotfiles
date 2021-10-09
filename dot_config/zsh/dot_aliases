@@ -1,0 +1,33 @@
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+# edit configs
+alias ea='codium ~/.config/zsh/.aliases'
+alias ez='codium ~/.config/zsh/.zshrc'
+
+# source configs
+alias sa='source ~/.config/zsh/.zshrc'
+alias sz='source ~/.config/zsh/.zshrc'
+
+# misc
+alias c=clear
+alias code=codium
+alias rm='rip --graveyard ~/.Trash'
+alias a='alias | fzf'
+
+# exa
+alias ls='exa --icons'
+alias lsa='exa -a --icons'
+alias lsao='exa -a --icons --oneline'
+alias lsla='exa -la --icons'
+alias lso='exa --icons --oneline'
+alias tree='exa --tree'
+alias treei='exa --tree --icons'
+
+# kitty
+alias dark='kitty @ set-colors -a -c ~/.config/kitty/themes/purple_one_dark.conf'
+alias icat='kitty +kitten icat'
+alias light='kitty @ set-colors -a -c ~/.config/kitty/themes/purple_one_light.conf'

@@ -1,0 +1,4 @@
+export ZDOTDIR=$HOME/.config/zsh
+export STARSHIP_CONFIG=$HOME/.config/starship/config.toml
+export EDITOR="codium"
+export VISUAL="codium"
