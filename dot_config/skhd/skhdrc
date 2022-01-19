@@ -57,3 +57,6 @@ cmd + alt - n : yabai -m space --create && \
 
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy
+
+# restart yabai
+ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
