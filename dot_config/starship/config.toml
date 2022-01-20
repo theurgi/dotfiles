@@ -1,6 +1,6 @@
 # The name of the module we are configuring is "character"
 [character]
 # skull
-success_symbol = "[ ﮊ](bold fg:#bababa)"
+success_symbol = "[ﮊ](fg:#bababa)"
 # skull
-error_symbol = "[ ﮊ](fg:#ff0090)"
+error_symbol = "[ﮊ](fg:#ff0090)"
