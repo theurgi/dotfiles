@@ -8,11 +8,11 @@ zle_highlight+=(paste:none)
 # zsh_load_file, zsh_load_plugin, zsh_load_completion
 source $ZDOTDIR/.zsh_loaders
 
-# ----------------- files -----------------
+# ————————————————— files —————————————————
 
 zsh_load_file ".aliases"
 
-# ---------------- plugins ----------------
+# ———————————————— plugins ————————————————
 
 zsh_load_plugin "zdharma/fast-syntax-highlighting"
 zsh_load_plugin "zsh-users/zsh-autosuggestions"
@@ -25,3 +25,7 @@ fpath=(${ASDF_DIR}/completions $fpath) # asdf
 
 # case-insensitive completions
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# ———————————————— exports ————————————————
+
+export PATH="$PATH:$(yarn global bin)"
