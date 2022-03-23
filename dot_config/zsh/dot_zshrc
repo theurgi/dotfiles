@@ -29,3 +29,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 # ———————————————— exports ————————————————
 
 export PATH="$PATH:$(yarn global bin)"
+# suggested by `brew doctor`
+export PATH="/usr/local/sbin:$PATH"
