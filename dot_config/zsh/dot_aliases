@@ -28,6 +28,8 @@ alias tree='exa --tree'
 alias treei='exa --tree --icons'
 
 # kitty
-alias dark='kitty @ set-colors -a -c ~/.config/kitty/themes/purple_one_dark.conf'
 alias icat='kitty +kitten icat'
-alias light='kitty @ set-colors -a -c ~/.config/kitty/themes/purple_one_light.conf'
+
+# System
+alias dark='~/bin/macos_theme_toggle.js dark'
+alias light='~/bin/macos_theme_toggle.js light'
