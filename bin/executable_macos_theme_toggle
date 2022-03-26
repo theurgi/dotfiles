@@ -8,7 +8,7 @@ const LIGHT = 'light'
 const args = process.argv.slice(2).map((arg) => arg.toLowerCase())
 
 if (args.length !== 1 || (args[0] !== DARK && args[0] !== LIGHT)) {
-  console.error(`This script requires one argument: DARK | LIGHT`)
+  console.error(`This script requires one argument: ${DARK} | ${LIGHT}`)
 
   process.exit(1)
 }
