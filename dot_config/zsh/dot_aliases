@@ -5,11 +5,10 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # edit configs
-alias ea='codium ~/.config/zsh/.aliases'
-alias ez='codium ~/.config/zsh/.zshrc'
+alias ea='chezmoi edit ~/.config/zsh/.aliases'
+alias ez='chezmoi edit ~/.config/zsh/.zshrc'
 
-# source configs
-alias sa='source ~/.config/zsh/.zshrc'
+# source zshrc
 alias sz='source ~/.config/zsh/.zshrc'
 
 # misc
@@ -17,6 +16,7 @@ alias c=clear
 alias code=codium
 alias rm='rip --graveyard ~/.Trash'
 alias a='alias | fzf'
+alias path="tr ':' '\n' <<< "$PATH""
 
 # exa
 alias ls='exa --icons'
@@ -30,6 +30,9 @@ alias treei='exa --tree --icons'
 # kitty
 alias icat='kitty +kitten icat'
 
+# nnn
+alias nnn='nnn -P a'
+
 # System
-alias dark='~/bin/macos_theme_toggle.js dark'
-alias light='~/bin/macos_theme_toggle.js light'
+alias dark='macos_theme_toggle dark'
+alias light='macos_theme_toggle light'

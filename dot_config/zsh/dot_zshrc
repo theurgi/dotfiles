@@ -11,6 +11,7 @@ source $ZDOTDIR/.zsh_loaders
 # ————————————————— files —————————————————
 
 zsh_load_file ".aliases"
+zsh_load_file "../nnn/.nnn"
 
 # ———————————————— plugins ————————————————
 
@@ -28,6 +29,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 # ———————————————— exports ————————————————
 
+export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:$(yarn global bin)"
-# suggested by `brew doctor`
+# ↓ suggested by `brew doctor`
 export PATH="/usr/local/sbin:$PATH"
