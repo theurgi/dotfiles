@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# TODO strip comments from copied result
+# TODO customize search window
+
+dir=$HOME/notebook/snippets
+
+if ! [ $PWD = $dir ]; then
+  cd $dir
+fi
+
+pbcopy <$(find * -type f | fzf --preview 'bat --color=always --plain {}')
