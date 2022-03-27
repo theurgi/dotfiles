@@ -1,0 +1,6 @@
+[edit]
+  command = "codium"
+  args = ["--wait"]
+
+[diff]
+  pager = "diff-so-fancy"
