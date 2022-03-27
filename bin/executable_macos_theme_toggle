@@ -24,8 +24,7 @@ const setMacOs = (theme) => {
 }
 
 const setKitty = (theme) => {
-  const cmd = `kitty @ set-colors -a -c ~/.config/kitty/themes/purple_one_${theme}.conf`
-
+  const cmd = `kitty +kitten themes --reload-in=all theurgi_${theme}`
   exec(cmd)
 }
 
