@@ -20,8 +20,8 @@
     "backgroundColorAsForeground": true
   },
   "themes": {
-    "lightTheme": "PurpleOneLight",
-    "darkTheme": "PurpleOneDark"
+    "lightTheme": "theurgi_light",
+    "darkTheme": "theurgi_dark"
   },
   "process": {
     "displayOnlyCurrent": false,
