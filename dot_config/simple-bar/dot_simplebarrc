@@ -14,7 +14,7 @@
     "font": "FiraCodeiScript Nerd Font",
     "fontSize": "11px",
     "yabaiPath": "/usr/local/bin/yabai",
-    "shell": "sh",
+    "shell": "dash",
     "slidingAnimationPace": "4",
     "externalConfigFile": true,
     "backgroundColorAsForeground": true
