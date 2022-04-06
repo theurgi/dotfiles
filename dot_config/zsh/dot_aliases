@@ -34,5 +34,5 @@ alias icat='kitty +kitten icat'
 alias nnn='nnn -P a'
 
 # System
-alias dark='macos_theme_toggle dark'
-alias light='macos_theme_toggle light'
+alias dark='theme dark'
+alias light='theme light'

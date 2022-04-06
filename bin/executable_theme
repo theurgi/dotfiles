@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// toggle macOS theme between light and dark
+
 const { exec } = require('child_process')
 
 const DARK = 'dark'
