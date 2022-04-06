@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+tput cup 4 3
+read -p "⑆ " choice
+
+case $choice in
+
+snip)
+  ~/bin/snip
+  ;;
+
+keys)
+  ~/bin/keys
+  ;;
+
+light)
+  ~/bin/theme light
+  exit
+  ;;
+
+dark)
+  ~/bin/theme dark
+  exit
+  ;;
+
+*)
+  exit
+  ;;
+esac

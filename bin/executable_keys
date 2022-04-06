@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+dir=~/notebook/keys
+
+if ! [ $PWD = $dir ]; then
+  cd $dir
+fi
+
+find * -type f -not -name ".*" | fzf --preview 'cat {}' >/dev/null

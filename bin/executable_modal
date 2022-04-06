@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+TITLE=$(uuidgen)
+
+PREVIOUS=$(yabai -m query --windows --window last | jq '.id')
+
+yabai -m rule --add title=$TITLE manage=off layer=above border=off
+
+kitty --title $TITLE --single-instance zsh -c '~/bin/menu; yabai -m window --focus '"$PREVIOUS"''
+
+yabai -m window --resize abs:800:200
+
+yabai -m window --move abs:320:350
