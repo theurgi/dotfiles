@@ -52,7 +52,7 @@
     "dateWidget": true,
     "timeWidget": true,
     "keyboardWidget": false,
-    "spotifyWidget": true,
+    "spotifyWidget": false,
     "cryptoWidget": true,
     "stockWidget": false,
     "musicWidget": false,
@@ -149,7 +149,20 @@
     "showSpecter": true
   },
   "userWidgets": {
-    "userWidgetsList": {}
+    "userWidgetsList": {
+      "1": {
+        "title": "eth gas",
+        "backgroundColor": "--main-alt",
+        "onClickAction": "",
+        "onRightClickAction": "",
+        "onMiddleClickAction": "",
+        "refreshFrequency": 10000,
+        "active": true,
+        "noIcon": false,
+        "output": "~/bin/gas",
+        "icon": "ZondiconsLocationGasStation"
+      }
+    }
   },
   "customStyles": {
     "styles": "/* your custom css styles here */"
