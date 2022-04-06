@@ -1,12 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
-# TODO strip comments from copied result
-# TODO customize search window
-
-dir=$HOME/notebook/snippets
+dir=~/notebook/snippets
 
 if ! [ $PWD = $dir ]; then
   cd $dir
 fi
 
-pbcopy <$(find * -type f | fzf --preview 'bat --color=always --plain {}')
+pbcopy <$(find * -type f -not -name ".*" | fzf --preview 'bat --color=always --plain {}')
