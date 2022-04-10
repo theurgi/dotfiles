@@ -30,6 +30,8 @@ brew "node"
 brew "pnpm"
 brew "rename"
 brew "rm-improved"
+brew "spotify-tui"
+brew "spotifyd", restart_service: true
 brew "starship"
 brew "tmux"
 brew "wget"
