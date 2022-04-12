@@ -1,0 +1,309 @@
+{
+  // ─────────────────────────────────────────────────────────
+  // vscode
+  // ─────────────────────────────────────────────────────────
+  "breadcrumbs.enabled": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true, // not active without eslint extension
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.foldingStrategy": "indentation",
+  "editor.fontFamily": "FiraCodeiScript Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.5,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": true,
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 200,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontFamily": "FiraCodeiScript Nerd Font",
+  "timeline.excludeSources": ["git-history"],
+  "update.showReleaseNotes": false,
+  "workbench.editor.showTabs": false,
+  "workbench.iconTheme": "file-icons-colourless",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.tips.enabled": false,
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": false,
+  // light/dark theme
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "purple one light",
+  "workbench.preferredDarkColorTheme": "purple one dark",
+  // --------------------------------------------------------------------
+  // bracket colorizer
+  // --------------------------------------------------------------------
+  "bracket-pair-colorizer-2.colors": ["#7e74ff", "#ab82ff", "#65638e"],
+  // --------------------------------------------------------------------
+  // colorize
+  // --------------------------------------------------------------------
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "javascript"
+  ],
+  // --------------------------------------------------------------------
+  // cspell
+  // --------------------------------------------------------------------
+  "cSpell.language": "en",
+  "cSpell.enableFiletypes": ["markdown"],
+  "cSpell.dictionaryDefinitions": [
+    {
+      "name": "user",
+      "path": "~/.vscode-oss/.cspell.txt"
+    }
+  ],
+  "cSpell.dictionaries": ["user"],
+  // --------------------------------------------------------------------
+  // css, sass, less
+  // --------------------------------------------------------------------
+  "css.validate": false, // use stylelint instead of VS Code
+  "scss.validate": false, // use stylelint instead of VS Code
+  "less.validate": false, // use stylelint instead of VS Code
+  // --------------------------------------------------------------------
+  // emmmet
+  // --------------------------------------------------------------------
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  // --------------------------------------------------------------------
+  // eslint
+  // --------------------------------------------------------------------
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "vue"],
+  // --------------------------------------------------------------------
+  // git
+  // --------------------------------------------------------------------
+  "git.autofetch": true,
+  "[git-commit]": {
+    "editor.rulers": [60, 72],
+    "editor.wordWrap": "off"
+  },
+  "scm.diffDecorationsGutterWidth": 1,
+  "scm.diffDecorations": "gutter",
+  // -------------------------------------------------------------------
+  // html
+  // --------------------------------------------------------------------
+  "html.format.wrapLineLength": 79,
+  "html.autoClosingTags": true,
+  // --------------------------------------------------------------------
+  // javascript
+  // --------------------------------------------------------------------
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // ↓ vscode built-in linting (disable if errors on ES7+)
+  "javascript.validate.enable": true,
+  // ↓ jsdoc typechecking
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  // --------------------------------------------------------------------
+  // prettier
+  // --------------------------------------------------------------------
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.vueIndentScriptAndStyle": true,
+  // --------------------------------------------------------------------
+  // python
+  // --------------------------------------------------------------------
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.rulers": [79, 120]
+  },
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "/usr/local/bin/flake8",
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": false,
+  "python.pythonPath": "/usr/local/bin/python3",
+  // --------------------------------------------------------------------
+  // react
+  // --------------------------------------------------------------------
+  "[javascriptreact]": {
+    "editor.autoClosingBrackets": "always"
+  },
+  // --------------------------------------------------------------------
+  // rewrap
+  // --------------------------------------------------------------------
+  "rewrap.wholeComment": false,
+  "rewrap.wrappingColumn": 77,
+  // --------------------------------------------------------------------
+  // schemas
+  // --------------------------------------------------------------------
+  "json.schemas": [
+    {
+      "fileMatch": ["/.babelrc"],
+      "url": "http://json.schemastore.org/babelrc"
+    }
+  ],
+  // --------------------------------------------------------------------
+  // shell
+  // --------------------------------------------------------------------
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  // --------------------------------------------------------------------
+  // svelte
+  // --------------------------------------------------------------------
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  // --------------------------------------------------------------------
+  // svg font preview
+  // --------------------------------------------------------------------
+  "svg-font-previewer.autoOpenPreview": false,
+  // --------------------------------------------------------------------
+  // settings sync
+  // --------------------------------------------------------------------
+  "sync.forceUpload": false,
+  "sync.gist": "ad20f5db8a5c7bb0c7027cd1866d94db",
+  "sync.quietSync": false,
+  "sync.removeExtensions": false,
+
+  // --------------------------------------------------------------------
+  // stylelint
+  // --------------------------------------------------------------------
+  "stylelint.validate": [
+    "css",
+    "html",
+    // "javascript", // breaking .cjs files
+    "javascriptreact",
+    "less",
+    "markdown",
+    "postcss",
+    "sass",
+    "scss",
+    "source.css.styled",
+    "source.markdown.math",
+    "styled-css",
+    "sugarss",
+    "svelte",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "vue-html",
+    "vue-postcss",
+    "xml",
+    "xsl"
+  ],
+  // --------------------------------------------------------------------
+  // todo highlight
+  // --------------------------------------------------------------------
+  "todohighlight.keywords": [
+    //
+    {
+      "text": "REFACTOR",
+      "color": "#131314",
+      "backgroundColor": "#00ffd5"
+    },
+    {
+      "text": "NOTE",
+      "color": "#131314",
+      "backgroundColor": "#48bbff"
+    },
+    {
+      "text": "QUESTION",
+      "color": "#fff",
+      "backgroundColor": "#9337D0"
+    },
+    {
+      "text": "BREAKING",
+      "color": "#fff",
+      "backgroundColor": "#ff1493"
+    },
+    {
+      "text": "TEST",
+      "color": "#131314",
+      "backgroundColor": "#ffff00"
+    },
+    {
+      "text": "TODO",
+      "color": "#131314",
+      "backgroundColor": "#3dffa2"
+    },
+    {
+      "text": "REMOVE",
+      "color": "#fff",
+      "backgroundColor": "#ff1493"
+    }
+  ],
+  // "todohighlight.keywordsPattern": "━([^━]*)━",
+  // "todohighlight.defaultStyle": {
+  //   "color": "#000",
+  //   "backgroundColor": "#7A88CF"
+  // },
+  // --------------------------------------------------------------------
+  // typescript
+  // --------------------------------------------------------------------
+  // ↓ vscode built-in linting and type-checking
+  "typescript.validate.enable": true,
+  "typescript.disableAutomaticTypeAcquisition": false,
+  "typescript.referencesCodeLens.enabled": true,
+  // --------------------------------------------------------------------
+  // vue
+  // --------------------------------------------------------------------
+  "[vue]": {
+    "editor.tabSize": 2
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "editor.renderWhitespace": "none",
+  "editor.minimap.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeLens": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "svelte.enable-ts-plugin": true,
+  "git.confirmSync": false,
+  "git-graph.repository.fetchAndPrune": true,
+
+  "workbench.colorCustomizations": {
+    // disable double underlines
+    "editorError.border": "#00000000",
+    "editorWarning.border": "#00000000",
+    "editorInfo.border": "#00000000"
+  },
+  "workbench.activityBar.visible": false,
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "workbench.colorTheme": "purple one light",
+  "editor.tokenColorCustomizations": {
+    "comments": { "fontStyle": "italic" }
+  }
+}
